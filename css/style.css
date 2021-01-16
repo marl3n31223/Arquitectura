@@ -1,0 +1,255 @@
+/*
+Esta hoja de estilo me va ayudar a darle formato a mis proyectos
+de HTML en la carpeta de Progra web.
+*/
+/*-------------------------------------------*/
+/*Este bloque contiene fondos                */
+/*Autor: Ana Garcia                         * /
+/*-------------------------------------------*/
+
+body.proy{
+	font-family:"Blackadder ITC";
+	/* cargamos el fondo*/
+    background-image: url("../media/imagenes/fondo.jpg");
+	/*no repetir la imagen*/
+	background-repeat:no-repeat;
+	/*tamaño de imagen */
+	background-size: 100% 100%;
+    /*que el fondo no se mueva*/
+    background-attachment:fixed;
+	/* ancho del contenido de la pagina*/
+	width: 90%;
+	/* crear un margen alrededor del contenido*/
+	margin: auto;
+	/*centrar el texto*/
+	text-align: center;
+	/* bordos*/
+	border: black 3px solid;
+}
+/*-------------------------------------------*/
+/*Este bloque contiene Titulos              */
+/*Autor: Ana Garcia                           */
+/*-------------------------------------------*/
+h1.title1{
+	font-family:Copperplate Gothic Bold;
+    color :black;
+	text-align: center;
+	font-size: 80%;
+	font-size:55px;
+}
+hi.first{
+	font-family:Copperplate Gothic Bold;
+    color :Black;
+	text-align: center;
+	font-size: 80%;
+	font-size:55px;
+}
+/*-------------------------------------------*/
+/*Este bloque contiene Parrafos             */
+/*Autor: Ana Garcia                         */
+/*-------------------------------------------*/
+p.title{
+	font-family:Angsana New;
+    color :red;
+	text-align: center;
+	font-size: 30%;
+	font-size:30px;
+}
+p.one{
+	font-family:Angsana New;
+    color :blue;
+	text-align: center;
+	font-size: 30%;
+	font-size:20px;
+}
+p.two{
+	font-family:Baskerville Old Face;
+    color :#660033;
+	text-align: center;
+	font-size: 30%;
+	font-size:15px;
+}
+p.arch{
+	font-family:Baskerville Old Face;
+    color :purple;
+	text-align: center;
+	font-size: 30%;
+	font-size:30px;
+}
+p.arch1{
+	font-family:Baskerville Old Face;
+    color :#660033;
+	text-align: center;
+	font-size: 30%;
+	font-size:20px;
+}
+p.arch2{
+	font-family:Baskerville Old Face;
+    color :#660033;
+	text-align: center;
+	font-size: 30%;
+	font-size:20px;
+}
+p.arch3{
+	font-family:Baskerville Old Face;
+    color :#660033;
+	text-align: center;
+	font-size: 30%;
+	font-size:20px;
+}
+p.first{
+	font-family:arial;
+    color :#660033;
+	text-align: center;
+	font-size: 30%;
+	font-size:15px;
+}
+a{
+	font-family:arial;
+    color :#660033;
+	text-align: center;
+	font-size: 30%;
+	font-size:20px;
+}
+p.name{
+	font-family:arial;
+    color :Red;
+	text-align: center;
+	font-size: 30%;
+	font-size:15px;
+}
+/*-------------------------------------------*/
+/*Este bloque contiene imagenes              */
+/*Autor:  Ana Garcia                         */
+/*-------------------------------------------*/
+
+img.logo{
+	content:url("../media/imagenes/log.jpg");
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid black; 
+	float:left-side;
+	width: 250px; 
+}
+img.lo1{
+	content:url("../media/imagenes/logo1.jpg");
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid black; 
+	float:center;
+	width: 250px; 
+}
+img.aMD{
+	content:url("../media/imagenes/aMD.jpg");
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid black; 
+	float:left-side;
+	width: 550px; 
+}
+img.par{
+content:url("../media/imagenes/paralelo.jpg");
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid black; 
+	float:left-side;
+	width: 550px; 
+}
+img.pro{
+	content:url("../media/imagenes/procesadores.jpg");
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid black; 
+	float:left-side;
+	width: 550px; 
+}
+img.u3{
+	content:url("../media/imagenes/Central de procesamientoCPU.jpg");
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid black; 
+	float:left-side;
+	width: 550px; 
+}
+img.buses{
+	content:url("../media/imagenes/bus.jpg");
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid black; 
+	float:left-side;
+	width: 550px; 
+}
+img.proces{
+	content:url("../media/imagenes/u2procesador.png");
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid black; 
+	float:left-side;
+	width: 550px; 
+}
+img.ins{
+	content:url("../media/imagenes/instruccion.png");
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid black; 
+	float:left-side;
+	width: 550px; 
+}
+img.proces{
+	content:url("../media/imagenes/registro procesador.png");
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid black; 
+	float:left-side;
+	width: 550px; 
+}
+img.E-S{
+	content:url("../media/imagenes/u3E-S.jpg");
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid black; 
+	float:left-side;
+	width: 550px; 
+}
+img.temp{
+	content:url("../media/imagenes/u3tempo.png");
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid black; 
+	float:left-side;
+	width: 550px; 
+}
+img.secu{
+	content:url("../media/imagenes/u4secuencial.jpg");
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid black; 
+	float:left-side;
+	width: 550px; 
+}
+img.esta{
+	content:url("../media/imagenes/u4estatica.jpg");
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid black; 
+	float:left-side;
+	width: 550px; 
+}
+/*-------------------------------------------*/
+/*Este bloque contiene listas               */
+/*Autor:  Ana Garcia                         */
+/*-------------------------------------------*/
+ul{
+	font-family:Arial;
+    color :black;
+	text-align: center;
+	font-size: 30%;
+	font-size:15px
+}
+il{
+	font-family:Arial;
+    color :black;
+	text-align: center;
+	font-size: 30%;
+	font-size:20px
+}

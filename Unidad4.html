@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arqutectura de computadoras</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+</head>
+<body class=proy>
+<!--Del proyecto final, desarrollar una página web (en cualquier
+lenguaje) de la información de la materia (temas del curso en
+su totalidad) así como videos de las exposiciones y prácticas,
+entregada en un host (sitio de hospedaje).-->
+<img class=logo>
+<h1 class=title1> Procesamiento paralelo</h1>
+<p class=title>Unidad 4</p>
+<p class=one>Aspectos basicos de la computacion paralela</p>
+<p class=two>La computación paralela es una forma de cómputo en la que muchas instrucciones se ejecutan
+simultáneamente,operando sobre el principio de que problemas grandes, a menudo se pueden
+dividir en unos más pequeños, que luego son resueltos simultáneamente (en paralelo). Hay varias
+formas diferentes de computación paralela: paralelismo a nivel de bit, paralelismo a nivel de
+instrucción, paralelismo de datos y paralelismo de tareas. El paralelismo se ha empleado durante
+muchos años, sobre todo en la computación de altas prestaciones, pero el interés en ella ha
+crecido últimamente debido a las limitaciones físicas que impiden el aumento de la frecuencia
+ Como el consumo de energía y por consiguiente la generación de calor de las
+computadoras constituye una preocupación en los últimos años la computación en paralelo se
+ha convertido en el paradigma dominante en la arquitectura de computadores, principalmente en
+forma de procesadoresmultinúcleo.
+<br>
+Los programas informáticos paralelos son más difíciles de escribir que los secuenciales,
+porque la concurrencia introduce nuevos tipos de errores de software, siendo las condiciones de carrera los
+más comunes. La comunicación y sincronización entre diferentes subtareas son algunos de los
+mayores obstáculos para obtener un buen rendimiento del programa paralelo.
+La máxima aceleración posible de un programa como resultado de la paralelización se conoce
+como la ley de Amdahl<br><br></p>
+<p class=one>Tipos de computacion paralela </p>
+<p class=two>Existen varios tipos de computación paralela:
+Paralelismo a nivel de bit
+Paralelismo a nivel de instrucción
+Paralelismo de datos
+Paralelismo de tareas.</p>
+<p class=one>Clasificacion</p>
+<p class=two>Clasificación de computadoras en procesamiento paralelo.
+Lenguajes de programación en paralelo
+<BR>
+Una instrucción, un dato (SISD)
+<br>gfctr       
+Múltiples instrucciones, un dato (MISD)
+<br>
+Tipos de paralelismo.
+<BR>
+Computación multinúcleo.
+<br>
+Multiprocesamiento simétrico.
+<br>
+Computación en clúster.
+<br>
+Computación distribuida.
+<br>
+Historia.
+<br>
+Clases de Computadoras paralelas.
+<br>
+Eficiencia
+TAXONOMIA DE FLYNN
+Paralelismo a nivel de bit.
+Paralelismo a nivel de instrucción.
+Paralelismo a nivel de datos.
+Paralelismo a nivel de tareas.
+P = C × V2 × F
+<br>
+La taxonomía de Flynn es una clasificación de arquitecturas de computadores propuesta por Michael J. Flynn en 1972.
+<br>
+Ley de Amdahl.
+Ley de Gustafson.
+Una instrucción, múltiples datos (SIMD)
+<br>
+Múltiples instrucciones, múltiples datos (MIMD)
+<br>
+Computación Paralela.
+La computación paralela es una forma de cómputo en la que muchas instrucciones se ejecutan simultáneamente
+<br>
+Software.</p>
+<p class=one>Arquitectura de computadoras secuenciales</p>
+<p class=two>
+<img class=secu>
+<br>
+las computadoras secuenciales se basan en el modelo introducido por john Von Neumann la cual consiste en :
+<br>
+una unidad central de procesamiento(CPU).
+<br>
+Memoria principal para almacenar informacion.
+<br>
+Bus donde flluyan los datos.
+<br>
+Mecanismo de sincronizacion.
+<br></p>
+<p class=one>Organizacion de direcciones de memoria</p> 
+<p class=two>Un microprocesador necesita, además de instrucciones, datos con los que trabajar y procesar.
+Los tipos de datos son pues las representaciones binarias con los que un valor puede ser codificado.
+El microprocesador 68000 puede menejar un total de 4 fomatos de datos, a saber: Bytes, Palabras (words), Palabras larga (long word) y BCD.
+<br>
+Byte: 8 bits
+Un dato de este formato puede ser transferido en un solo ciclo de bus.
+Las direcciones en memoria puede ser tanto par como impar, y por lo tanto los incrementos del PC son de 1 celda de memoria.
+<br>
+Palabras: 16 bits
+Los datos bajo este formato también pueden ser transferidos en un solo ciclo de bus.
+Existen sin embargo ciertas restricciones para su direccionamiento. Los datos Palabra solo almacenarse en direcciones de memoria pares. De esta forma, su byte más significativo se almacena en la parte baja (par) de la celda y su byte menos significativo en la parte alta (par) de la misma.
+Los incrementos de memoria son ahora de 2 bytes.
+<br>
+Palabras largas: 32 bits
+Puesto que los registros internos del 68000 son de 32 bits, se consigue también manejar este tipo de datos, pero al tener un bus de datos de 16 bits se necesitan 2 ciclos de bus para una transferencia.
+Las direcciones son ahora pares también, pero los incrementos son ahora de 4 bytes. Así, a nivel de byte, el más significativo se guarda en la parte más baja de la palabra larga y el menos significativa en la parte más alta de esta.
+<br>
+BCD: Binary Coded Decimal   4 - 4 bits
+El 68000 es capaz de utilizar datos en BCD, utilizando cada dígito 4 bits (de 0=0000 hasta 9=1001), lo que permite almacenar 2 datos BCD en un mismo byte. Los datos en un byte variaran pues de 00 hasta 99.
+En esta organización, el dato BCD más significativo se guarda ahora en la parte alta del byte y el menos significativo en la parte baja.
+<br>
+</p>
+<p class=one>Sistema de memoria compartida (multiprocesadores)</p>
+<p class=two>Un multiprocesador puede verse como un computador paralelo compuesto por varios procesadores interconectados que comparten un mismo sistema de memoria.
+
+Los sistemas multiprocesadores son arquitecturas MIMD con memoria compartida. Tienen un único espacio de direcciones para todos los procesadores y los mecanismos de comunicación se basan en el paso de mensajes desde el punto de vista del programador.
+
+Dado que los multiprocesadores comparten diferentes módulos de memoria, pudiendo acceder a un mismo módulo varios procesadores, a los multiprocesadores también se les llama sistemas de memoria compartida.
+se clasifican en sistemas multiprocesador UMA, NUMA y COMA.
+
+Multitarea: Permite a múltiples procesos compartir una única CPU, múltiples CPUs pueden ser utilizados para ejecutar múltiples hilos dentro de un único proceso.</p>
+<p class=one>Redes de inteconexion dinamica (indirecto) medio compartida conmutadas</p>
+<p class=two>Las redes estáticas emplean enlaces directos fijos entre los nodos. Estos enlaces, una vez
+fabricado el sistema, son difíciles de modificar, por lo que la escalabilidad de estas topologías
+es baja. Las redes estáticas pueden utilizarse con eficiencia en los sistemas en que puede
+predecirse el tipo de tráfico de comunicaciones entre sus procesadores. Veamos algunas clases
+de redes de interconexión estáticas:
+REDES DE MEDIO COMPARTIDO
+Dependiendo de su arquitectura y de los procedimientos empleados para transferir la información las redes de comunicación se clasifican en:
+-Redes conmutadas
+-Redes de difusión
+ REDES DE INTERCONEXIÓN DINÁMICAS O INDIRECTAS.
+Multicomputadores
+La característica más importante de estos sistemas es que tienen la memoria distribuida.Esta arquitectura también es conocida como arquitectura basada en el paso de mensajes,
+ya que los procesos deben realizar comunicaciones (mensajes) a través de la red de interconexión para poder compartir datos. Estas máquinas, por consiguiente, no están limitadas
+por el ancho de banda de memoria, sino más bien por el de la red de interconexión
+ COHERENCIA DE CACHE
+ REDES CONMUTADAS
+Las redes conmutadas se dividen en:
+-Conmutación de paquetes
+-Conmutación de circuitos
+Consiste en un conjunto de nodos interconectados entre si, a través de medios de transmisión, formando la mayoría de las veces una topología mallada, donde la información se transfiere encaminándo
+la del nodo de origen al nodo destino mediante conmutación entre nodos intermedios. Una transmisión de este tipo tiene 3 fases:
+-Establecimiento de la conexión-Transferencia de la información-Liberación de la conexión
+El objetivo de la interconexión de red es dar un servicio de comunicación de datos que involucre diversas redes con diferentes tecnologías de forma transparente para el usuario.</p>
+<p class=one>Sistema de memoria distribuido multicomputadoras</p>
+<p class=two>Los sistemas de memoria distribuida o multicomputadores pueden ser de dos tipos básicos. El primer de ellos consta de un único computador con múltiples CPUs comunicadas por un bus de datos mientras que en el segundo se utilizan
+ múltiples computadores, cada uno con su propio procesador, enlazados por una red de interconexión más o menos rápida.
+ se simula memorias compartidas. Se usan los mecanismos de comunicación y sincronización de sistemas multiprocesadores.</p>
+<p class=one>Redes de interconexion estaticas</p>
+<p class=two>
+<img class=esta>
+<br>
+Las redes estaticas emplean enlaces directos fijos entre los nodos.estos enlaces,una vez fabricado el sistema,son dificiles de cambiar,por lo que la escalabilidad de estas topologias es
+ baja.las redes estaticas pueden utilizarse con eficiencia en los sistemas en que pueden predecirse el tipo de trafico de comunicaciones entre sus procesadores.los principales  clases de redes de interconexion estaticas son :
+formacion lineal :se trata de una red unidimensional en que los N nodos se conectan cada ino con el siguiente mediante N - 1 enlaces formando una linea.</p>
+<p class=one>Casos para estudio</p>
+<p class=two>
+	<ul>Líneas De Investigación Y Desarrollo
+		<li>Paralelización de algoritmos secuenciales. Diseño y optimización de algoritmos.</li>
+		<li>Arquitecturas multicore y multithreading en multicore.</li>
+		<li>Arquitecturas multiprocesador.</li>
+		<li>Modelos de representación y predicción de performance de algoritmos paralelos.</li>
+		<li>Mapping y scheduling de aplicaciones paralelas sobre distintas arquitecturas multiprocesador.</li>
+		<li>Métricas del paralelismo. Speedup, eficiencia, rendimiento, granularidad, superlinealidad.</li>
+		<li>Balance de carga estático y dinámico. Técnicas de balanceo de carga.</li>
+		<li>Análisis de los problemas de migración y asignación óptima de procesos y datos a procesadores. Migración dinámica.</li>
+		<li>Patrones de diseño de algoritmos paralelos.</li>
+		<li>Escalabilidad de algoritmos paralelos en arquitecturas multiprocesador distribuidas.</li>
+		<li>Implementación de soluciones sobre diferentes modelos de arquitectura homogéneas y heterogéneas (multicores, clusters, multiclusters y grid). Ajuste del modelo de software al modelo de hardware, a fin de optimizar el sistema paralelo.</li>
+		<li>Evaluación de performance.</li>
+		<li>Laboratorios remotos para el acceso transparente a recursos de cómputo paralelo.</li>
+	</ul>
+<p class=two>
+<br>INTEL
+<br>PYSICS LAYER:
+<br>No GPU PhysX
+<br>CPU Havok
+<br>Graphics Layer:
+<br>GPU –Direct X Windows
+<br>
+AMD
+<br>PYSICS LAYER:
+<br>No GPU PhysX
+<br>CPU Havok
+<br>Graphics Layer:
+<br>GPU –DirectX Windows<br></p>
+<p class=name>Alumna:Ana Citlali Garcia Chambasis</p>
+<a href="../Temario.html" target="_blank">
+	<button id="mybtn" class=button>Temario</button>
+	</a>
+</body>
+</html>

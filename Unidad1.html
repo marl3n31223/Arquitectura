@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arqutectura de computadoras</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+</head>
+<body class=proy>
+<!--Del proyecto final, desarrollar una página web (en cualquier
+lenguaje) de la información de la materia (temas del curso en
+su totalidad) así como videos de las exposiciones y prácticas,
+entregada en un host (sitio de hospedaje).-->
+<img class=logo>
+<h1 class=title1> Arquitectura de computadoras </h1>
+<p class=title>Unidad 1</p>
+
+<p class=one>Arquitectura de multiprocesamiento 06/10/20</p>
+<br>
+<P class=two>Se denomina multiprocesador a una computadora que cuenta con dos o mas micropocesadores(CPUs),puede ejecutar simultaneamente varios hilos pertenecientes a un mismo proceso.
+La arquitectura  NUMA cada procesador tiene acceso y control exclusivo a una parte de la memoria.
+La arquitectura SMP,todos los procesadores comparten toda la memoria.
+Los CPU de multiprocesador según Flynn se clasifican de la siguiente manera:</p>
+	<ul>
+		<li>SISO-computadora monoprocesador</li>
+		<li>SIMO; procesadores vectoriales, ecenciones MMX</li>
+		<li>MISO: No implementado</li>
+		<li> MIMO: sistemas SMP.Clusters,GPUs</li>
+   </ul>
+<p class=two>Los procesadores vectoriales son computadoras pensadas para aplicar iun mismo algoritmo numérico a una serie de datos matriciales
+La mayoría  de los procesadores modernos incluye algunas instrucciones de tipo vectorial-
+Los procesadores Digitales de señales(DSP) son procesadores especializados en el procesamiento de señales tales como audio, radar, sonar,radio.etc.
+En los sistemas SMP, varios procesadores comparen la misma memoria principal y perifericos de Estada/Salida conectados por un bus comun.
+ <br>
+Clusters
+<br>
+Conjuntos de computadoras independientes conectadas en una red de área local o por un bus de interconexiones y que trabajan cooperativamente,con un sistema de procesamiento paralelo o distribuido,
+es clave en su funcionamiento contar con un sistema operativo y programas de aplicaciones capaces de distribuir el trabajo entre las computadoras de red.
+Procesadores Gráficos
+Sistemas diseñados originalmente para el procesamiento de graficos, con multiples procesadores vectoriales sencillos compartiendo la misma memoria, la cual puede ser accedida por el CPU.</p>
+<br><br>
+
+<p class=one> &aacute;nalisis de componentes 07/10/20</p>
+<br>
+<p class=two>Existen arquitecturas hibridas entre la Von Newman y la Harvard,buscando conservar la flexibilidad,pero mejorando el rendimiento.
+Los programas cada vez mas grandes y complejos demandan mayor velocidad en el procesamiento de informacion,lo que implica la elección de microprocesadores más rapidos y eficientes.
+<br>
+Arquitectura CISC
+<br>
+Es un modelo de arquitectura,en donde los microprocesadores tienen un conjunto instrucciones que caracterizan por ser muy amplio y permitir operaciones complejas.
+Se implementan instrucciones especiales que realizan funciones complejas. Dificulta el paralelismo entre instrucciones, la mayoria de los sistemas CISC de alto rendimiento implementan un sistema que convierte dichas instrucciones complejas en varias instrucciones simples del tipo RISC, llamadas microinstrucciones.
+Los CISC pertenecen a la primera corriente de construcción de procesadores, antes del desarrollo de los RISC.
+<br>
+Arquitectura RISC
+<br>
+Es un tipo de microprocesador con instrucciones de tamaño fijo y presentado en un número reducido de formatos, solo las instrucciones de carga y almacenamiento acceden a la memoria de datos, el objetivo de diseño de maquinas es posibilitar la segmentacion y el paralelismo en la ejecución de instrucciones y reducir los accesos a memoria, las maquinas RISC protagonizan la tendencia actual de construccion de microprocesadores .
+Es una filosofia de diseño de CPU para computadora que esta a favor de conjuntos de instrucciones pequeñas y simples que toman menor tiempo para ejecutarse</p>
+<p class=one>Tipo de unidad central de procesamiento 12/10/20</p>
+<p class=two>CPU
+<br>
+	<ul>Se pueden clasificar de acuerdo a varias características:
+		<li>Tamaño de unidad aritmética lógica</li>
+		<li>Bus de conexión exterior</li>
+		<li>Si su arquitectura tiene cause(pipeline).</li>
+		<li>Si son Von Newmann o harvar</li>
+		<li>Si son CISC o RISC</li>
+		<li>Si manejan instrucciones enteras o 
+		Implementan instrucciones de punto flotante</li>
+	<ul>
+<br>
+Procesadores Intel
+<br>
+Lo primero que se define es que necesidades se tiene.
+Los procesadores para portátiles calificados con 5 estrellas satisfacen la máxima exigencia móvil.
+La inteligencia artificial está cambiando nuestras expectativas de lo que pueden hacer los productor de tecnológia para nosotros
+Intel ha integrado capacidades de IA al procesador de la PC para satisfacer la creciente demanda de aplicaciones de software modernas.
+Unidad de procesamiento central CPU :circuito de control principal de una computadora.
+Chiplet: circuito integrado que contiene un subconjunto de los bloques funcionales que se necesitan para un sistema de chip
+Chip:pequeño bloque de material semiconductor en el que se como un CI funcional.
+Modelo comercial integrado :lidér en el sector de los semiconductores que permite a las empresas destinar más ganancias
+Unidad de procesamiento de graficos: circuito que realiza operaciones de grandes cantidades de datos en simultaneo.
+Circuito integrado: conjunto de circuitos electrónicos diseñados en un área pequeña del material.
+Nanometro: unidad de medida ,se utiliza para definir el tamaño de elemento minímo de una tecnológia de procesos.
+Paquete: carcasa de metal, plastico, cristal o ceramíca que contiene uno o más CI independientes.
+Transistor: componente que regula el flujo de corriente electríca y funciona como componente fundamental de los CI.
+Oblea: lamina fina de silicón que se utiliza para fabricar varios CI.</p>
+<br>
+<p class=one>Unidad aritm&eacute;tica-l&oacute;gica 13/10/20</p>
+<p class=two>ALU 
+<br>
+Es un circuito digital que realiza como su nombre lo indica las operaciones aritmeticas y lógicas entre los datos de un circuito; Todos los microprocesadores(CPU's)incluyen al menos una ALU, que varía su poder y complejidad según su finalidad. cuenta con una serie de registros para almacenar los datos y bits de infomacion sobre los resultados .
+El circuito ALU es simplemente un operador, es decir no toma decisiones.
+El ALU deberá contar con un circuito de control que le permita:
+Identificar la operación a realizar
+Administar los recursos internos 
+Generar las banderas</p>
+<br>
+<p class=one>Unidad de control 14/10/20</p>
+<p class=two>Es la parte inteligente del sistema microprocesador, de los CPU's.
+Debido a que el procesador desarrolla sus tareas en función de las instrucciones secuenciales que ha organizado e implementado el programador ,es necesario que el sistema interprete cada tipo intrucción para actuar en consecuencia.
+El conjunto de instrucciones que conforman cada instrucción, vienen grabadas de fabrica en el chip del CPU, en una memoria de tipo ROM y no es accesible al programador.
+Los sistemas micro programables:
+Puede que antes de terminarla instrucciones se salte a otra puede darse según las señales de condición que este esté recibiendo la unidad de control.
+</p>
+<br>
+<p class=one>registros del procesador(CPU) 15/10/20</p><br>
+<p class=two>
+Los registros que encuentran dentro de cada procesador su función principales almacenar los valores de cada uno de los datos, comandos,instrucciones o estados binarios que son los  que ordenan que dato debe procesarse, asi como la forma en la que se debe realizar.
+Cada procesador tiene varias asignaciones o tareas que debe de realizar para el manejo de la información .
+El código es en binario .
+<br>
+Registro de datos: guardan valores de datos númericos ,como son los caracteres o pequeñas ordénes.
+<br>
+Registro de datos de memoria(MDR)
+<br>
+Es un registro que se encuentra en el procesador y que está conectado al bus de datos. Tiene poca capacidad y una velocidad alta por la que escribe o lee los datos del bus que van dirigidos a la memoria o al puerto E/S.
+<br>
+Registro de direcciones;
+Guardan direcciones que son usadas para acceder a la memoria principal o primaria, que solemos conocer como ROM o RAM.
+<br>
+Registro de propósito general(GPRs):
+Son registros que sirven para almacenar direcciones o datos generales.
+<br>
+Registro de proposito especifico:
+Guardan datos del estado del sistema 
+<br>
+Registro de estado:Sirve para guardar valores reales cuya funcion es determinada cuans procesadores intel con arquitectaura X86.
+<br>
+Registros flotantes :su cometido es guardar valores de solo lectura como son el 0,1 o pdo una instrucción debe ejecutarse o no .
+Dentro de este sistema encontramos el registro de bandera o FLAGS:se encuentran en loi.</p>
+
+<p class=one>Memoria 20/10/20</p>
+<p class=two>Es un dispositivo que puede mantenerse en por lo menos dos estados estables por un cierto periodo de tiempo .pueden usarse para representar un bit, un dispositivo de memoria completo se forma con varias celdas básicas y los circuitos asociados para poder leer y escribir dichas celdas básicas ,agrupadas como localidades de memoria que permitan almacenar un grupo de N bits.
+<br>
+Memoria principal Semiconductora:
+Utiliza en su arquitectura circuitos integrados basados en semiconductores para almacenar información.
+Un chip de memoria de semiconductor puede contener millones de minúsculos transistores o condensadores.
+<br>
+Memoria de cache:
+La cache es una memoria que se sitúa entre la unidad central de procesamiento(CPU) y la memoria de acceso aleatorio (RAM) para acelerar el intercambio de datos, cuando el procesador necesita leer o escribir en una ubicación en memoria principal, primero verifica si una copia de los datos está en la memoria de cache.
+<br>
+Memoria cache nivel 1.tambien llamada memoria interna, es utilizada para almacenar y acceder a datos.
+<br>
+Memoria cache nivel 2.almacena datos de uso frecuente es más rápida que la memoria RAM.
+<br>
+Memoria cache nivel 3.es más rápida que la memoria RAM, pero más lenta que L2,se agiliza el acceso a datos e instrucciones que no fueron localizadas en L! O L2
+</p>
+<p class=one>M&oacute;dulos de Entrada/Salida (E/S) 21/10/20</p>
+<p class=two>
+El intercambio de información entre componentes, computadoras y usuarios es realizado mediante dispositivos que denominamos de manera generica  perifericos.
+Para poder realizarlo, la computadora dispone del sistema de módulo de entrada /salida.
+Son las interfaces que tiene la computadora con el exterior y el objetivo que tiene es facilitar las operaciones de E/S entre los perifericos y la memoria.
+Están conectados con el procesador y la memoria principal ,la arquitectura de E/S es si interfaz con el exterior, se diseña de manera que permita una forma sistematica . 
+Para gestionar las operaciones de E/S se necesita un hardware y ayuda del software 
+<br>
+Técnicas de E/S Principales: 
+Programada: el procesador ejecuta un programa que controla toda la operación de E/S(programación, transferencia de datos y finalización). 
+<br>
+Analizamos con más detalle la transferencia de un dato: Durante la sincronización, el procesador ,como responsable de la transferencia, ejecuta un programa que mira constantemente el estado del periférico consultando el registro de estado del módulo de E/S. Tiene un bucle que se ejecuta continuamente hasta que detecta el cambio de estado e indica que está preparado. 
+El programa genera una orden de E/S y después continua ejecutándose hasta que el hardware lo interrumpe para indicar que la operación ha concluido .
+La entrada y salida con interrupciones, aunque es más eficiente que la programada, requiere la intervención activa del procesador para tranferir los datos entre la memoria y el modulo. para utilizar la técnica de E/S en una computadora, se consideran aspectos del software como del hardware.
+<br>
+Linea especial: conjunto de lineas de control del bus del sistema y se denominan lineas de peticioón de interrupcion (INT).
+El modúlo avisa al procesador mediante las lineas para hacer tranferencia, la señal INT la activa el modúlo y la recibe el procesador.</p>
+<br>
+<p class =one>Buses 03/11/20</p>
+<p class=two>Existen dos tipos primordiales de buses(conexiones)para el envío de la informacion: bus paralelo o serial.
+Bus paralelo: es un bus en el cual los datos  son  enviados por bytes al mismo tiempo, con la ayuda de varias lineas que tienen funciones fijas. ha sido usado de manera intensiva desde el bus del procesador, los buses de discos duros, tarjetas de expansión y de video hasta las impresoras.
+Bus serie: los datos son enviados, bit a bit  y se reconstruyen por medio de registros o rutinas de software. esta formado por su ancho de banda y pocos conductores,
+Buses del procesador:
+Bus de direcciones: Es unidireccional ya que la información fluye en un solo sentido, del CPU a la memoria o a los elementos de entrada y salida. El CPI puede colocar niveles  lógicos en las lineas de dirección con la cual se generan 2n posibles direcciones diferentes. el procesador envía un  codigó de dirección a la memoria o a otro dispositivo externo 
+Bus de datos:es  bidimensional,pues los datos pueden fluir hacia o desde el cpu.las terminales peuden ser entradas o salidas,dependiendo de la operación.en algunos procesadores,el bus de datos se usa para transmitir otra informacion  ademas de  datos,es compartido en el tiempo o multiplexado.
+Bus de control:este conjunto de señales se usa para sincronizar las actividades y transacciones con los perofericos del sistema,algunas de las señales como lectura o escritura R/W,son enviador por el CPU para indicar el tipo de operacion
+Tecnologia de buses-
+Un bus se puede definir como una linea de interconexion portadora de infromacion,constituida por vaior hilos conductores o varios canales de las cuales se transporta un bit de informacion.
+Bus interno mueve datos entre los componentes internos del microprocesador.
+Bus local:De alta velocidad que conecta el procesador a la cache,el controlador de la cache tambien puede acceder al bus del sistema.
+Bus del sistema.Esta conectada la memoria y por debajo el bus de expansion,al cual se pueden conectar una amplia.</p>
+</p><br><br>
+<br><img class=buses>
+<p class=name>Ana Citlali Garcia Chambasis</p>
+<a href="../Temario.html" target="_blank">
+<button id="mybtn" class=button>Temario</button>
+</a>
+</body>
+</html>
